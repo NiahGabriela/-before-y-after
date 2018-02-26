@@ -1,0 +1,42 @@
+/* En la siguiente linea indicaremos que 
+ANTES de todos los elementos  p agregaremos 
+un contenido (content) de una flecha decorativa 
+y un color, se pueden agregar todos los estilos 
+que se desee */
+
+q::before 
+{ 
+  content: " « -- ";
+  color: #009900;
+}
+
+/* En la próxima linea indicaremos que 
+DESPUES de todos los elementos  p agregaremos 
+un contenido (content) de una flecha decorativa */
+
+q::after 
+{ 
+  content: " -- » ";
+  color: #FF3399;
+}
+
+/* Por último agregaremos algo a la clase decoración,
+que únicamente contiene la palabra "con" en este momento
+agregaremos una frase, y le aplicaremos un estilo de borde, color, padding y un color de fondo */
+
+.decoracion::before 
+{
+  content: " :before y :after ";
+  padding: .1%;
+  background-color: #E6CCFF;
+  border-color: black;
+  border-width: 5px; 
+  border-style: double;
+}
+
+/*
+.decoracion::after 
+{
+    content: url(octocat.jpg);
+}*/
+
